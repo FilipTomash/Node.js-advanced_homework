@@ -1,0 +1,43 @@
+### Get all products
+GET http://localhost:3000/products
+
+### Get product by id
+
+GET http://localhost:3000/products/642c79dc703024bbeca596f5
+
+### Create product
+
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "title": "Blue suade shoes",
+    "stock": 2,
+    "price": 1000000,
+    "description": "if you want to feel and dance like the King, these are the shoes for you",
+    "category": "shoes",
+    "price": 450 
+}
+
+### Replace product using PUT
+
+PUT  http://localhost:3000/products/6479ff7aa90c4f8f1ed4d323
+Content-Type: application/json
+
+{
+    "title": "Blue suede shoes",
+    "stock": 1,
+    "price": 1000000,
+    "description": "if you want to feel and dance like the King, these are the shoes for you",
+    "category": "shoes"
+}
+
+### Update product using PATCH
+
+PATCH  http://localhost:3000/products/642c79dc703024bbeca596f5
+Content-Type: application/json
+
+{
+    "stock": 10,
+    "price": 1000,
+}

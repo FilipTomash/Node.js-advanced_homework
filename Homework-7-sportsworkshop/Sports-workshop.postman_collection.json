@@ -1,0 +1,540 @@
+{
+	"info": {
+		"_postman_id": "35daefaf-4665-4092-8da4-42471573ea98",
+		"name": "Sports-workshop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Managers",
+			"item": [
+				{
+					"name": "getAllManagers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}manager",
+							"host": [
+								"{{url}}manager"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getManagerById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}manager/17fcc691-d3e8-4e5a-87df-471dbc5b4407",
+							"host": [
+								"{{url}}manager"
+							],
+							"path": [
+								"17fcc691-d3e8-4e5a-87df-471dbc5b4407"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createManager",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Dado\",\r\n    \"lastName\": \"Dadovski\",\r\n    \"age\": 18,\r\n    \"salary\": 200000,\r\n    \"yearsOfExperience\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}manager",
+							"host": [
+								"{{url}}manager"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateManager",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Mile\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}manager/2d98544a-924e-4c97-b445-8dc10c704016",
+							"host": [
+								"{{url}}manager"
+							],
+							"path": [
+								"2d98544a-924e-4c97-b445-8dc10c704016"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteManager",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Mile\",\r\n    \"lastName\": \"Todorovski\",\r\n    \"age\": 39,\r\n    \"salary\": 100000,\r\n    \"yearsOfExperience\": 16\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}manager/e8be5008-8edd-453f-a4d2-c61edbeac9b0",
+							"host": [
+								"{{url}}manager"
+							],
+							"path": [
+								"e8be5008-8edd-453f-a4d2-c61edbeac9b0"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Matches",
+			"item": [
+				{
+					"name": "getAllMatches",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}matches",
+							"host": [
+								"{{url}}matches"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getMatchById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}matches/7",
+							"host": [
+								"{{url}}matches"
+							],
+							"path": [
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createMatch",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"league\": \"Champions League\",\r\n    \"time\": \"21:00\",\r\n    \"result\": \"2:1\",\r\n    \"players\":\"c40eb7d0-de99-4a50-9336-c03b9c7bc035\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}matches",
+							"host": [
+								"{{url}}matches"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateMatch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Mile\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}manager/2d98544a-924e-4c97-b445-8dc10c704016",
+							"host": [
+								"{{url}}manager"
+							],
+							"path": [
+								"2d98544a-924e-4c97-b445-8dc10c704016"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteMatch",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Mile\",\r\n    \"lastName\": \"Todorovski\",\r\n    \"age\": 39,\r\n    \"salary\": 100000,\r\n    \"yearsOfExperience\": 16\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}manager/e8be5008-8edd-453f-a4d2-c61edbeac9b0",
+							"host": [
+								"{{url}}manager"
+							],
+							"path": [
+								"e8be5008-8edd-453f-a4d2-c61edbeac9b0"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImJhOGNmOTEyLTRkZTItNGQwMy04YTA4LTUzYTllOWRjYTVkOCIsImZpcnN0TmFtZSI6IlNvbWVvbmUiLCJlbWFpbCI6InNvbWVvbmVAZ21haWwuY29tIiwiaWF0IjoxNjgzMjA0ODQ4LCJleHAiOjE2ODMyMDU0NDh9.HW6SKhuYDM5osOxO7fIQjho8olxEt2QoBSZAbxHkXnc",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Players",
+			"item": [
+				{
+					"name": "getAllPlayers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}players",
+							"host": [
+								"{{url}}players"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPlayerById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}players/d456f22e-1738-49b3-8f48-51e6fbcdc354",
+							"host": [
+								"{{url}}players"
+							],
+							"path": [
+								"d456f22e-1738-49b3-8f48-51e6fbcdc354"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createPlayer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Robert\",\r\n    \"lastName\": \"Test\",\r\n    \"salary\": 956770,\r\n    \"ranking\": 5,\r\n    \"team\":\"1668f9d2-f4f9-4042-8592-9cfcf64c9d04\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}players",
+							"host": [
+								"{{url}}players"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updatePlayer",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"team\": \"121995f8-9b7b-40b0-be89-2488719b2b34\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}players/e3d83ebd-7e34-415c-8c31-57fd3a8c8e08",
+							"host": [
+								"{{url}}players"
+							],
+							"path": [
+								"e3d83ebd-7e34-415c-8c31-57fd3a8c8e08"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deletePlayer",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Mile\",\r\n    \"lastName\": \"Todorovski\",\r\n    \"age\": 39,\r\n    \"salary\": 100000,\r\n    \"yearsOfExperience\": 16\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}players/337e733f-1646-4125-8890-4ca3778143c7",
+							"host": [
+								"{{url}}players"
+							],
+							"path": [
+								"337e733f-1646-4125-8890-4ca3778143c7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Teams",
+			"item": [
+				{
+					"name": "getAllTeams",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}team",
+							"host": [
+								"{{url}}team"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getTeamById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}team/121995f8-9b7b-40b0-be89-2488719b2b34",
+							"host": [
+								"{{url}}team"
+							],
+							"path": [
+								"121995f8-9b7b-40b0-be89-2488719b2b34"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createTeam",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Vardar\",\r\n    \"budget\": 678,\r\n    \"ranking\": 222,\r\n    \"managerId\":\"eb8b9ac6-2bd6-415a-b180-044eaf7ae360\",\r\n    \"playerId\":[\"c40eb7d0-de99-4a50-9336-c03b9c7bc035\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}team",
+							"host": [
+								"{{url}}team"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateTeam",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"manager\": \"f84f215c-4a2b-4841-a5b3-68c4ff1aca7f\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}team/121995f8-9b7b-40b0-be89-2488719b2b34",
+							"host": [
+								"{{url}}team"
+							],
+							"path": [
+								"121995f8-9b7b-40b0-be89-2488719b2b34"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteTeam",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Mile\",\r\n    \"lastName\": \"Todorovski\",\r\n    \"age\": 39,\r\n    \"salary\": 100000,\r\n    \"yearsOfExperience\": 16\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}team/337e733f-1646-4125-8890-4ca3778143c7",
+							"host": [
+								"{{url}}team"
+							],
+							"path": [
+								"337e733f-1646-4125-8890-4ca3778143c7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "registerUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\":\"Someone\",\r\n    \"email\":\"someone@gmail.com\",\r\n    \"password\":\"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}auth/register",
+							"host": [
+								"{{url}}auth"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "loginUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"someone@gmail.com\",\r\n    \"password\":\"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}auth/login",
+							"host": [
+								"{{url}}auth"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

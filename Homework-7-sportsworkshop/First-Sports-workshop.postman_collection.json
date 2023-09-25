@@ -1,0 +1,342 @@
+{
+	"info": {
+		"_postman_id": "01bd609b-9116-4d01-bbdc-1aa75cdb80d0",
+		"name": "Sports-workshop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Managers",
+			"item": [
+				{
+					"name": "getAllManagers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}manager",
+							"host": [
+								"{{url}}manager"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getManagerById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}manager/17fcc691-d3e8-4e5a-87df-471dbc5b4407",
+							"host": [
+								"{{url}}manager"
+							],
+							"path": [
+								"17fcc691-d3e8-4e5a-87df-471dbc5b4407"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createManager",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Mile\",\r\n    \"lastName\": \"Todorovski\",\r\n    \"age\": 39,\r\n    \"salary\": 100000,\r\n    \"yearsOfExperience\": 16\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}manager",
+							"host": [
+								"{{url}}manager"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateManager",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Mile\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}manager/2d98544a-924e-4c97-b445-8dc10c704016",
+							"host": [
+								"{{url}}manager"
+							],
+							"path": [
+								"2d98544a-924e-4c97-b445-8dc10c704016"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteManager",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Mile\",\r\n    \"lastName\": \"Todorovski\",\r\n    \"age\": 39,\r\n    \"salary\": 100000,\r\n    \"yearsOfExperience\": 16\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}manager/e8be5008-8edd-453f-a4d2-c61edbeac9b0",
+							"host": [
+								"{{url}}manager"
+							],
+							"path": [
+								"e8be5008-8edd-453f-a4d2-c61edbeac9b0"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Players",
+			"item": [
+				{
+					"name": "getAllPlayers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}players",
+							"host": [
+								"{{url}}players"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPlayerById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}players/d456f22e-1738-49b3-8f48-51e6fbcdc354",
+							"host": [
+								"{{url}}players"
+							],
+							"path": [
+								"d456f22e-1738-49b3-8f48-51e6fbcdc354"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createPlayer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Robert\",\r\n    \"lastName\": \"Test\",\r\n    \"salary\": 956770,\r\n    \"ranking\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}players",
+							"host": [
+								"{{url}}players"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updatePlayer",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"team\": \"121995f8-9b7b-40b0-be89-2488719b2b34\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}players/e3d83ebd-7e34-415c-8c31-57fd3a8c8e08",
+							"host": [
+								"{{url}}players"
+							],
+							"path": [
+								"e3d83ebd-7e34-415c-8c31-57fd3a8c8e08"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deletePlayer",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Mile\",\r\n    \"lastName\": \"Todorovski\",\r\n    \"age\": 39,\r\n    \"salary\": 100000,\r\n    \"yearsOfExperience\": 16\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}players/337e733f-1646-4125-8890-4ca3778143c7",
+							"host": [
+								"{{url}}players"
+							],
+							"path": [
+								"337e733f-1646-4125-8890-4ca3778143c7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Teams",
+			"item": [
+				{
+					"name": "getAllTeams",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}team",
+							"host": [
+								"{{url}}team"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getTeamById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}team/121995f8-9b7b-40b0-be89-2488719b2b34",
+							"host": [
+								"{{url}}team"
+							],
+							"path": [
+								"121995f8-9b7b-40b0-be89-2488719b2b34"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createTeam",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Manchester United\",\r\n    \"budget\": 54321678,\r\n    \"ranking\": 10,\r\n    \"managerId\":\"2d98544a-924e-4c97-b445-8dc10c704016\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}team",
+							"host": [
+								"{{url}}team"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateTeam",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"manager\": \"2d98544a-924e-4c97-b445-8dc10c704016\",\r\n    \"name\": \"Barcelona\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}team/121995f8-9b7b-40b0-be89-2488719b2b34",
+							"host": [
+								"{{url}}team"
+							],
+							"path": [
+								"121995f8-9b7b-40b0-be89-2488719b2b34"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteTeam",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Mile\",\r\n    \"lastName\": \"Todorovski\",\r\n    \"age\": 39,\r\n    \"salary\": 100000,\r\n    \"yearsOfExperience\": 16\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}team/337e733f-1646-4125-8890-4ca3778143c7",
+							"host": [
+								"{{url}}team"
+							],
+							"path": [
+								"337e733f-1646-4125-8890-4ca3778143c7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
